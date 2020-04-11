@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number相关</title>
+</head>
+<body>
+<!--Number:表示整数和浮点数-->
+<!--NaN:表示非数字（特殊的number）一种特殊的数据类型，和谁都不相等-->
+<!--Number用于各种数据类型转换
+Number方法是不能够提取数字的，包含字符串的转换数值，都会返回NaN
+-->
+<!--parseInt()-->
+<!--parseFloat()-->
+<script>
+    var value1 = 17,str1 = "hello";
+    var value2 =18 ,str2 = "hello2";
+    console.log((value1/str1) == (value2/str2));//false
+    console.log((value1/str1) === (value2/str2));//false
+    console.log("-------------------------------");
+    var value_null = null, age= 10, str3 = "我是字符串", age_str = "10", value_last;
+    console.log(isNaN(value_null));//true
+    console.log(isNaN(age));//false
+    console.log(isNaN(str3));//true
+    console.log(isNaN(age_str));//false
+    console.log(isNaN(value_last));//true
+    console.log("--------------------------------")
+
+    var boxWidth1 = "50px", boxWidth2 = "px50", boxWidth3 = "50px50", boxWidth4 = "50.51"
+    console.log(parseInt(boxWidth1));//50
+    console.log(parseInt(boxWidth2));//NaN
+    console.log(parseInt(boxWidth3));//50
+    console.log(parseInt(boxWidth4));//50
+    console.log("--------------------------------")
+    var floatVal1 = "50px", floatVal2 = "px50", floatVal3 = "050px", floatVal4 = "50.12345", floatVal5 = "50.123px45";
+    console.log(parseFloat(floatVal1));//50
+    console.log(parseFloat(floatVal2));//NaN
+    console.log(parseFloat(floatVal3));//50
+    console.log(parseFloat(floatVal4));//50.12345
+    console.log(parseFloat(floatVal5));//50.123
+
+</script>
+</body>
+</html>

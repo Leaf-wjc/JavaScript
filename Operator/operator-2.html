@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其它操作符</title>
+</head>
+<body >
+<script>
+    var score = 85;
+    document.write(score > 60 ? "及格" : "不及格");
+    document.write("<hr/>");
+    var studentScore1 = 50,
+        studentScore2 = 60;
+    document.write(studentScore1 > 60 ? "及格" : "不及格");
+    document.write(studentScore2 > 60 ? "及格" : "不及格");
+    document.write("<hr/>");
+    document.write("逻辑操作符");
+    console.log("-------------");
+    var testA = 1;
+    var testB;
+    console.log(0 || "hello");
+    console.log(0 || "" || null || testB);
+    console.log(30*"abc" || 99);
+    console.log(!testB);
+    var testC= null;
+    console.log(Boolean(testC));
+    console.log(testC || testB);
+    console.log("-------------");
+    var workA = 8 % 0,
+        workB,
+        workC = 1;
+    document.write(workA || workB || workC);//1
+    var workX = 1,
+        workY = "0",
+        workZ = 33;
+    document.write(workX || workY || workZ);//1
+    var workM = !(!undefined),
+        workN = !0;
+    document.write(workM || workN);//true
+
+</script>
+</body>
+</html>
