@@ -5,6 +5,98 @@
     <title>分支语句</title>
 </head>
 <body>
+<script>
+    // var studentScore = prompt();
+    // if (studentScore < 60) {
+    //     alert("不及格");
+    // }else if(studentScore >= 60 && studentScore < 80) {
+    //     alert("您的成绩刚及格");
+    // }else if (studentScore >= 80 && studentScore <= 100) {
+    //     alert("您的成绩为优");
+    // }else {
+    //     alert("您输入的成绩不合法")
+    // }
+    // var price = prompt("请输入商品的价格"),
+    //     num = prompt("请输入商品的数量");
+    // var result = price * num;
+    // if (result > 500){
+    //     alert("请您支付"+ (result*=0.8) + "元");
+    // } else if (result < 500) {
+    //     alert("请您支付" + result + "元");
+    // }
+    //
+    // var password = prompt("请设置您的密码");
+    // if (password.length != 11){
+    //     alert("请输入6位的密码");
+    // } else{
+    //     if (isNaN(password)){
+    //         alert("请输入数字密码");
+    //     } else {
+    //         alert("密码设置正确");
+    //     }
+    // }
 
+    var score = prompt("请输入成绩");
+    if(score < 0 || score > 100 ){
+        alert("您输入的成绩有误！！");
+    }else{
+        if(score >= 90 && score <= 100){
+            alert("Good");
+        }else if(score >= 80 && score <= 89){
+            alert("良好");
+        }else if(score >= 70 && score <= 79){
+            alert("一般");
+        }else if(score >= 60 && score <= 69){
+            alert("及格");
+        }else if(score < 60){
+            alert("不及格");
+        }
+    }
+
+    var week = new Date().getDay();
+    switch (week) {
+        case 0:
+        document.write("今天是星期一" + "<br/>");
+        break;
+
+    }
+    var num = parseInt(prompt("请输入字号"));
+    switch (num) {
+        case 0:
+            document.write("零");
+            break;
+        case 1:
+            document.write("一");
+            break;
+        case 2:
+            document.write("二");
+            break;
+        case 3:
+            document.write("三");
+            break;
+        case 4:
+            document.write("四");
+            break;
+        case 5:
+            document.write("五");
+            break;
+        case 6:
+            document.write("六");
+            break;
+        case 7:
+            document.write("七");
+            break;
+        case 8:
+            document.write("八");
+            break;
+        case 9:
+            document.write("九");
+            break;
+        default:
+            document.write("错误");
+
+    }
+
+</script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+<script>
+    // 循环里一定要有循环的条件，不然那控制台会报错，代码不会向下执行下去
+    // for (var i = 1;i < 10;i++){
+    //     console.log(i);
+    // }
+    for (var i =1;i < 10;i++){
+        for (var j = 1;j <= i;j++){
+            document.write( j + "*" + i +"=" + i*j + "&nbsp;");
+        }
+        document.write("<br/>");
+    }
+    document.write("<hr/>");
+    var str1 = "游戏第",
+        str2 = "分";
+    for (var time = 1; time < 6;time++){
+        document.write(str1+time+"轮,得分<br/>");
+        for (var score = 10; score <= 100;score+=10) {
+            document.write(score+str2+"&nbsp;");
+        }
+        document.write("<hr/>");
+    }
+
+    for (var a = 1; a < 10;a++){
+        for (b = 1; b < a;b++){
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+
+    for (var num = 100; num < 1000;num++){
+        var hundreds = parseInt(num / 100),
+            tens = parseInt((num - (hundreds*100)) / 10),
+            ones = num - (hundreds * 100) - (tens * 10);
+        var resNum = (hundreds*hundreds*hundreds)+(tens*tens*tens)+(ones*ones*ones);
+        if (resNum == num){
+            document.write(num+"<br/>");
+        }
+    }
+    document.write("<hr/>");
+    for (var m=1;m<10;m++){
+        for (var n=0;n<10;n++){
+            for (var p=0;p<10;p++){
+                if ((m*m*m)+(n*n*n)+(p*p*p) == (m*100)+(n*10)+p){
+                    document.write((m*100)+(n*10)+p+"<br/>");
+                }
+            } 
+        } 
+    } 
+
+</script>
+</body>
+</html>

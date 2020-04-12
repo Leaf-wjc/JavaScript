@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9269099a-8505-42ad-82f9-3f0f8a0a683e" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/BaseDataType/Number.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaseDataType/String-boolean.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operator/operator-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flow/for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flow/while.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/Number.html" beforeDir="false" afterPath="$PROJECT_DIR$/Operator/operator-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/undefined-null-typeof.html" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDataType/undefined-null-typeof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flow/branch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flow/branch.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +28,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operator-2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="operator-2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Operator/operator-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
               <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="branch.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flow/branch.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="for.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flow/for.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="while.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flow/while.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -60,6 +85,10 @@
         <option value="$PROJECT_DIR$/Base/Number.html" />
         <option value="$PROJECT_DIR$/Operator/operator-1.html" />
         <option value="$PROJECT_DIR$/Operator/operator-2.html" />
+        <option value="$PROJECT_DIR$/Operator/branch.html" />
+        <option value="$PROJECT_DIR$/Flow/branch.html" />
+        <option value="$PROJECT_DIR$/Flow/for.html" />
+        <option value="$PROJECT_DIR$/Flow/while.html" />
       </list>
     </option>
   </component>
@@ -79,8 +108,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1421" />
-    <option name="y" value="23" />
+    <option name="x" value="1309" />
+    <option name="y" value="24" />
     <option name="width" value="1118" />
     <option name="height" value="893" />
   </component>
@@ -97,6 +126,11 @@
             <path>
               <item name="JavaScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="Flow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaScript" type="b2602c69:ProjectViewProjectNode" />
@@ -118,6 +152,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Flow" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -141,15 +180,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586402340708</updated>
-      <workItem from="1586402343743" duration="16379000" />
+      <workItem from="1586402343743" duration="27451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16379000" />
+    <option name="totallyTimeSpent" value="27451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1421" y="23" width="1118" height="893" extended-state="0" />
+    <frame x="1309" y="24" width="1118" height="893" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18322699" />
@@ -212,6 +251,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flow/branch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flow/for.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flow/while.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
