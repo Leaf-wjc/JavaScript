@@ -5,6 +5,23 @@
     <title>while</title>
 </head>
 <body>
+<script>
+    var luckyNum;
+    while (luckyNum != 5) {
+        luckyNum = prompt("请输入您想要猜的数字")
+        if (luckyNum < 5){
+            alert("猜小了");
+        } else if (luckyNum > 5 && luckyNum <= 10){
+            alert("猜大了");
+        } else if (luckyNum > 10){
+            alert("输入的数字超过了10！");
+        } else if (isNaN(luckyNum)) {
+            alert("输入不合法");
+        } else {
+            alert("猜对了");
+        }
+    }
 
+</script>
 </body>
 </html>

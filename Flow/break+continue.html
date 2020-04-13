@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break+continue</title>
+</head>
+<body>
+<!--break是直接跳出所有循环-->
+<!--continue是跳出本次循环-->
+<script>
+    for (var s = 0,i = 0;i < 100;i++){
+        var test_bal = 0;
+        if (i % 22 == 0){
+            continue;
+        }
+        s+=i;
+        console.log(i);
+    }
+    console.log(s);
+    console.log(test_bal);
+</script>
+</body>
+</html>
