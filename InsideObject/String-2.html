@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串截取</title>
+</head>
+<body>
+<!-- 	//slice参数为负数时，需要字符串长度+负数
+	//substring遇见负数会将参数转为0
+	//substr从哪开始截取，截取的个数 -->
+	<script>
+		/*
+		var str = "hello world";
+		console.log(str.slice(0,3));
+		console.log(str);
+		console.log(str.slice(-7, 5));
+		*/
+
+		//o 
+
+		// var str2 = "hello world";
+		// console.log(str2.substring(start: int, end: int))
+
+
+		    var str="Program ape world you do not understand";
+    
+		    document.write(str.length+"<br/>");
+
+		    document.write(str.indexOf("w")+"<br/>");
+		    document.write(str.slice(12, 17)+"<br/>");
+		    document.write(str.substring(12, 17)+"<br/>");
+		    document.write(str.substr(12,5));
+		    // document.write(str.slice());//补充代码
+		    // document.write("<br/>");
+		    // document.write();//补充代码
+		    // document.write("<br/>");
+		    // document.write();//补充代码
+	</script>
+</body>
+</html>

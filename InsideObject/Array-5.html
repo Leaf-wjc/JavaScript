@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf-lastIndexOf</title>
+</head>
+<body>
+	<script>
+		var numArr = [1,7,8,5,17,7,6,9,1,4,5];
+		// var pos =num.indexOf(7,2);
+		// var pos2 = num.lastIndexOf(1);
+		// console.log(pos);
+// 针对浏览器不兼容indexOf与lastIndexof
+
+		function ArrayIndexOf (arr,num) {
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] === num) {
+					return i;
+				}
+			}
+			return -1;
+		}
+
+		document.write(ArrayIndexOf(numArr,17));
+
+	</script>
+</body>
+</html>

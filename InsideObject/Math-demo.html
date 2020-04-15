@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Math-random</title>
+</head>
+<body>
+	<script>
+		var numArr = [];
+		for (var i = 0; i < 10; i++) {
+			numArr[i] = Math.floor(100*(Math.random()))+1;
+		}
+		var numArr = numArr.sort(function (a,b) {return b-a});
+		var strArr = numArr.join(",");
+		var maxNum = Math.max(...numArr),
+			minNum = Math.min(...numArr);
+
+		document.write(strArr+"<br/>");
+		document.write("这组数字中最大的值是" + maxNum + ",最小的值是:" + minNum);
+	</script>
+</body>
+</html>

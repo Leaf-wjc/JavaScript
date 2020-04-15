@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Splice</title>
+</head>
+<body>
+	<script>
+		var arr_slice = ["a","b","c","d","e","f"];
+		var new_arr_slice = arr_slice.slice(2, 5);
+		console.log(arr_slice);
+		console.log(new_arr_slice);
+
+
+
+		var strArr = ["a","b","c","d","e","f"];
+		var newStrArr = strArr.splice(0, 3);
+		console.log(strArr);
+		console.log(newStrArr);
+
+		var strArr2 = ["a","b","c","d","e","f"];
+		var newStrArr2 = strArr2.splice(1,0,"hello","word");
+		console.log(strArr2);
+		console.log(newStrArr2);
+
+		var input,
+			numArr=[];
+		while (input != -1) {
+			input = prompt("请输入数字");
+			if (input == "-1") {
+				break;
+			}
+			numArr[numArr.length] = input;
+		}
+		numArr.splice(0,2,"hello","word");
+		document.write(numArr);
+	</script>
+</body>
+</html>

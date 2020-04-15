@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array实战</title>
+</head>
+<body>
+	<script>
+		var num,
+			numArr=[];
+		while(num != -1){
+			num = prompt("请输入您要输入排序的数据");
+			if (isNaN(num)) {
+				alert("请输入数字");
+			} else if (num == "") {
+				alert("不输入空的内容");
+			} else {
+				numArr.push(num);
+			}
+
+		}
+		numArr.pop()
+		numArr.sort(function (a,b) {return (b-a)});
+		document.write(numArr);
+
+		function arrSort () {
+			var newArr = [];
+			for (var i = 0; i < arguments.length; i++) {
+				newArr.push(arguments[i]);
+			}
+			newArr.sort(function (a,b) {
+				return (b-a);
+			})
+			var strArr = newArr.join();
+			return strArr;
+		}
+		document.write(arrSort(1,2,3,4,5,6,7,8));
+
+		var a = [1,2,3];
+
+		for (var i = 0; i < 10; i++) {
+			if (i == 3) {
+				var	b = a;
+			}
+		}
+		a[0] = "immoc";
+		console.log(a);
+		console.log(b);
+	</script>
+</body>
+</html>

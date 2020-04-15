@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+</head>
+<body>
+	<script>
+		var arr1 = [],
+			money;
+       do{
+           money = prompt("请输入工资");
+           if (!(isNaN(money))) {
+              arr1[arr1.length] = money;
+           } 
+
+       }while(money != "退出")
+
+       for (var i = 0; i < arr1.length; i++) {
+       	document.write(arr1[i]);
+       }
+	</script>
+</body>
+</html>

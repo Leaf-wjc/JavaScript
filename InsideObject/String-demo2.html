@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>String-demo</title>
+</head>
+<body>
+	<script>
+		function getUpper (str) {
+			var firstLetter="";
+			str = str.toLowerCase();
+			var strArr = str.split(" ");
+			for (var i = 0; i < strArr.length; i++) {
+				strArr[i] = strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1);
+			}
+			str = strArr.join(" ");
+			return str;
+		}
+
+		document.write(getUpper("all time is no time when it is past"));
+
+	</script>
+</body>
+</html>

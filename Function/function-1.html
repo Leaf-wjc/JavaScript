@@ -6,7 +6,57 @@
 </head>
 <body>
 <!--把反复调用的东西封装在函数里-->
+<!-- 函数的返回值 -->
+<!-- return如果没有返回值的情况默认返回undefined,并且立即停止函数 -->
 <script>
+	console.log(isNaN(""));
+	/*
+	function myFun (num1,num2) {
+		document.write(num1+"&nbsp;*&nbsp;"+num2+"&nbsp;=&nbsp;" + num1*num2 + "<br/>");
+	}
+	myFun(3,4);
+	myFun(5,6);
+	myFun(7,7);
+//也可以选择用do-while实现
+	var pwd=0;
+	function checkPwd (pwd) {
+		while (!(pwd.length >= 6 && pwd.length <= 12)) {
+			pwd = prompt("请输入用户密码");
+			if (pwd.length >= 6 && pwd.length <= 12) {
+				alert("密码输入正确");
+			} else {
+				alert("请您输入的密码位数在6-12位之间");
+			}
+		}
+		return ("密码输入正确");
+	}
+
+	checkPwd(pwd);
+//anguments
+    var userName=prompt("请输入用户名");
+    var userPwd=prompt("请输入密码");
+    var sure=prompt("请输入验证码");
+    function login(){
+        if(isNaN(arguments[1])){//补充代码
+          alert("密码错误");
+        }
+        if(arguments[2].length < 4){//补充代码
+          alert("验证码不小于4位");
+        }
+    }
+    login(userName,userPwd,sure);
+    */
+//求任意一组数的平均值
+function testFunc () {
+	var sum = 0,
+		range = 0;
+	for (var i = 0; i < arguments.length; i++) {
+		sum+=arguments[i];
+		range = sum / arguments.length;
+	}
+	return parseInt(range);
+}
+console.log(testFunc(5,66,45,32,88,24,40));
 </script>
 </body>
 </html>

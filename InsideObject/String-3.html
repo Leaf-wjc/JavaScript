@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Split</title>
+</head>
+<body>
+	<script>
+		var str1 = "Welcome-to-Beijing";
+		var arr1 = str1.split("-");
+		console.log(arr1);
+
+		var  input = prompt("请输入您的手机号码");
+		var star = input.replace(input.slice(0,7),"*******");
+		document.write(star);
+
+    	var strUpper = "Never deter till tomorrow that which you can do today";
+    	var len = strUpper.length;
+    	var index = strUpper.indexOf("tomorrow");
+    	var newStr = strUpper.substr(index,8).toUpperCase();
+    	newStr = strUpper.replace("tomorrow",newStr);
+
+    	console.log(newStr);
+
+	</script>
+</body>
+</html>

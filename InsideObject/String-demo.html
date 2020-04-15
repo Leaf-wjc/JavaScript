@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+</head>
+<body>
+	<script>
+		var checkStr = "JavaScript 是属于网络的脚本语言！JavaScript 被数百万计的网页用来改进设计、验证表单、检测浏览器、创建cookies，以及更多的应用。JavaScript 是因特网上最流行的脚本语言。JavaScript很容易使用！你一定会喜欢它的！",
+			count = 0;
+		for (var i = 0; i < checkStr.length; i++) {
+			if (checkStr.charAt(i) === "J") {
+				if (checkStr.substr(i,10) === "JavaScript") {
+					count++;
+					document.write("JavaScript第"+ count + "次出现的位置是在" + i + "的位置<br/>");
+				}
+			}
+		}
+		document.write("JavaScript在这段话中一共出现了" + count + "次");
+
+
+		function getFileName (str) {
+			var len = str.length;
+			var index = str.lastIndexOf(".")+1;
+			str = str.substr(index);
+			return str;
+		}
+		document.write(getFileName("<br/>"+"hello.jpg"));
+
+
+		var input;
+		input = prompt("请输入登录邮箱");
+		var len = input.length;
+		var index = input.indexOf("@");
+		var userName = "",
+			localName = "";
+		userName = input.slice(0,index);
+		localName = input.slice(index+1);
+		document.write("邮箱的用户名是：" + userName+"<br/>");
+		document.write("登陆的邮箱域名是：" + localName);
+	</script>
+
+</body>
+</html>

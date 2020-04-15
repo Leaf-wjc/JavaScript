@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array-2</title>
+</head>
+<body>
+
+	<script>
+
+		document.write("push+pop"+"<br/>"+"unshift+shift");
+
+		//push的返回值是一个新数组的长度,就把元素添加到
+		//pop移除最后面的元素
+		//unshift是向数组前面加入元素
+		//shift是向从数组前面移除元素
+		var testArr = ["___"];
+		var len = testArr.push("hello","word","!");
+		console.log(testArr);
+		console.log(len);
+
+		var testArr2 = ["___"];
+		var len2 = testArr2.unshift("hello","word","!");
+		console.log(testArr2);
+		console.log(len2);
+
+		testArr.pop();
+
+		testArr2.shift();
+
+		console.log(testArr);
+		console.log(testArr2);
+
+		console.log(testArr.reverse());
+		console.log(testArr2.reverse());
+
+		var test = ["c","a","b","d"];
+		console.log(test.reverse());
+
+
+		// console.log(newTestArr);
+		// console.log(newTestArr2);
+	</script>
+</body>
+</html>

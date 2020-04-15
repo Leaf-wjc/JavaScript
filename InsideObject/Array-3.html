@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>join方法</title>
+</head>
+<body>
+	<script>
+		document.write("join方法是把数组里的元素都放在一个字符串里"+"<br/>");
+		document.write("join可以带参数，拼接出来的字符串用什么字符链接");
+		document.write("reverse方法会改变原来的数组")
+		var arr1 = ["1","2","3"];
+		console.log(arr1.join("-"));
+		console.log(arr1);
+		var words = ["border","left","color"];
+		console.log(words.join("-"));
+		console.log();
+
+		var num = [2,4,5];
+		var new_num = num.reverse()
+		console.log(new_num);
+		console.log(num);
+
+		var wordArr = ["a","b","c","d"];
+		console.log(wordArr.reverse().join(""));
+
+		var numArray = [9,23,25,-99,88,12,-2];
+		console.log(numArray.sort(function (a,b) {return a-b}));
+		console.log(numArray);
+
+	</script>
+</body>
+</html>

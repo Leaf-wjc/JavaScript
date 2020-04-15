@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo2</title>
+</head>
+<body>
+	<script>
+		var systemNum = Math.floor(9*Math.random())+1,
+			input;
+		console.log(systemNum);
+		while (input !== systemNum) {
+			input = parseInt(prompt("请输入幸运数字"));
+			if (input < systemNum) {
+				alert("您猜的数字有些小");
+			} else if (input > systemNum) {
+				alert("您猜的数字有些大");
+			}
+		}
+		alert("恭喜你猜对了");
+	</script>
+</body>
+</html>
