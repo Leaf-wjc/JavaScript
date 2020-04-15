@@ -32,9 +32,16 @@
 				minutes = date.getMinutes(),
 				second = date.getSeconds();
 			document.write("今天是" + year + "年" + month + "月" + day + "日" + "星期" + weeksArr[week] + "<br/>");
-			document.write(hours+":"+minutes+":"+second);
+			document.write(hours+":"+minutes+":"+second+"<br/>");
 		}
 		formatDate();
+
+		var date2 = new Date(),
+			newYear = date2.getFullYear(),
+			newMonth = date2.getMonth(),
+			newToday = date.getDate();
+		var temp = new Date(year+1,month,newToday+50);
+			document.write("300天后的日期是" + temp.getFullYear() + "年" + (temp.getMonth()+1) + "月" + temp.getDate() + "日" + "星期" + weeks[temp.getDay()] + "<br/>");
 	</script>
 </body>
 </html>

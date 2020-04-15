@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date</title>
+</head>
+<body>
+	<script>
+		var year = prompt("请输入入职年份"),
+			month = prompt("请输入入职月份"),
+			day = prompt("请输入入职日期");
+
+		var date = new Date(year,month-1,day),
+			endYear = date.getFullYear()+3,
+			endMonth = date.getMonth()+1,
+			enDay = date.getDate();
+		document.write("员工的入职日期是"+ year + "-" + month + "-" + day + "日" +"<br/>");
+		document.write("员工合同的终止日期"+ endYear + "-" + endMonth + "-" + enDay + "日" +"<br/>");
+	</script>
+</body>
+</html>
