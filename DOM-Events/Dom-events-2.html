@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<input type="button" value="开始" onmouseover="mousOverFn(this,'purple')" onmouseout="mouseOutFn(this)">
+	<input type="button" value="结束" onmouseover="mousOverFn(this,'orange')" onmouseout="mouseOutFn(this)">
+	<script>
+		function mouseOutFn (btn) {
+			// body... 
+			btn.style.color = "gray";
+			btn.style.cursor = 'pointer'
+		}
+		function mousOverFn (btn,color) {
+			// body... 
+			btn.style.color = color;
+			btn.style.cursor = 'pointer'
+		}
+	</script>
+</body>
+</html>
