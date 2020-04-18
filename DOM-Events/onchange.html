@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>onchange</title>
+</head>
+<body>
+	<select name="bg-color" id="bg-select">
+		<option value="">--请选择--</option>
+		<option value="red">红色</option>
+		<option value="yellow">黄色</option>
+		<option value="blue">蓝色</option>
+		<option value="green">绿色</option>
+		<option value="pink">粉色</option>
+	</select>
+	<script>
+		var menu = document.getElementById("bg-select");
+		function changeColor () {
+			// body... 
+			var bgColor = this.value;
+			if (bgColor == "") {
+				document.body.style.backgroundColor = "bgColor";
+			}
+			// var bgColor = menu.options[menu.selectedIndex].value;
+			document.body.style.backgroundColor = bgColor;
+
+		}
+		menu.onchange = changeColor;
+	</script>
+</body>
+</html>

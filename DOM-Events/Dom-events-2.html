@@ -5,8 +5,10 @@
 	<title></title>
 </head>
 <body>
+
 	<input type="button" value="开始" onmouseover="mousOverFn(this,'purple')" onmouseout="mouseOutFn(this)">
 	<input type="button" value="结束" onmouseover="mousOverFn(this,'orange')" onmouseout="mouseOutFn(this)">
+	<div id="btn">锁定</div>
 	<script>
 		function mouseOutFn (btn) {
 			// body... 
@@ -18,6 +20,7 @@
 			btn.style.color = color;
 			btn.style.cursor = 'pointer'
 		}
+
 	</script>
 </body>
 </html>

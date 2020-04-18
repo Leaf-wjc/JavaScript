@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>onblur和onfocus</title>
+    <style type="text/css">
+        .red{
+    		border:1px solid red;
+    	}
+    </style>
+</head>
+<body>
+	姓名：<input type="text" id="username"> <span id="info"></span>
+	<script type="text/javascript">
+		var userName = document.getElementById("username"),
+			checkInfo = document.getElementById("info");
+		function checkName () {
+			this.className = "";
+			if (this.value == "") {
+				checkInfo.innerHTML = "请输入您的姓名";
+			}
+		}
+		function checkNull () {
+			if (this.value == "") {
+				this.className = "red";
+				checkInfo.innerHTML = "用户名不能为空";
+			} else {
+				checkInfo.innerHTML = "";
+			}
+		}
+		username.onfocus = checkName;
+		username.onblur = checkNull;
+	</script>
+</body>
+</html>

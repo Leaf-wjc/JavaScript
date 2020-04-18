@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<input type="button" id="btn" value="录入">
+<body>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.onclick = dataEntry;
+		function dataEntry () {
+			// body... 
+			var input,
+				dataArr = [];
+			while (input != "-1") {
+				// statement
+				input = prompt("请输入员工姓名");
+				dataArr.push(input);
+			}
+			dataArr.pop();
+			for (var i = 0; i < dataArr.length; i++) {
+				document.write("录入的第" + (i+1) + "个信息是" + dataArr[i] + "<br/>");
+			}
+		}
+	</script>
+</body>
+</html>
