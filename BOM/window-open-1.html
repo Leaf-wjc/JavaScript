@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window.open</title>
+</head>
+    <body>
+       <input type="button" value="关闭本页面" id="close">
+       <input type="button" value="打开慕课网" id="open">
+       <script type="text/javascript">
+           var screenClose = document.getElementById("close"),
+           		screenOpen = document.getElementById("open");
+           function  closeWeb() {
+           	// body... 
+ 			window.location.href = "about:blank";
+           	window.close();
+           }
+           function openWeb () {
+           	// body... 
+           	window.open("http://www.imooc.com", "parentScreen");
+           }
+           screenOpen.onclick = openWeb;
+           screenClose.onclick = closeWeb;
+       </script>
+    </body>
+</html>

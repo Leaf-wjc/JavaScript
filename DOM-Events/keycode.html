@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	    <meta charset="UTF-8">
+	    <title>输入文本</title>
+	</head>
+	<body>
+		<p>字数限制在30字内，<span id="tips-container">您还可以输入<b>30</b> 字</span></p>
+		<textarea cols="50"  rows="7"  id="text"></textarea>
+		<script type="text/javascript">
+			var text = document.getElementById("text"),
+				tipContanier = document.getElementById("tips-container");
+			text.onkeyup = function () {
+				/* body... */
+				var len = text.value.length,
+					allow = 30-len;
+				if (allow < 0) {
+					tipContanier.innerHTML="您已经超出" + "<b>" + Math.abs(allow) + "</b>字";
+				} else {
+					tipContanier.innerHTML="您还可以输入" + "<b>" + allow + "</b>字";
+				}
+
+			}
+		</script>
+	</body>
+</html>

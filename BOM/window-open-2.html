@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>打开/关闭页面</title>
+    </head>
+    <body>
+       <input type="button" name="" value="打开页面" id="btn">
+       <script type="text/javascript">
+           var btn = document.getElementById("btn");
+           function newScreen (argument) {
+           	// body... 
+           	var openFlg = confirm("是否打开新页面");
+           	if (openFlg) {
+           		window.open("test-window.html", "parentScreen");
+           	} else {
+ 				// window.location.href = "about:blank";
+           		window.close();
+           	}
+
+           }
+           btn.onclick = newScreen;
+       </script>
+    </body>
+</html>
