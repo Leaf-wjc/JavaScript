@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="操作页面" id="ck">
+        <script type="text/javascript">
+           var btn = document.getElementById("ck");
+           btn.onclick = load;
+           function load () {
+           	// body...
+           	var flg = confirm("确认刷新页面么");
+           	if (flg) {
+           		location.replace("http://www.imooc.com");
+
+           	} else {
+           		location.reload(true);
+           	}
+           }
+        </script>
+	<script>
+		/*
+		console.log(location.host);
+		console.log(location.hostname);
+		console.log(location.pathname);
+		console.log(location.search);
+		// location.href会生成历史记录
+		// location.replace不会生成历史记录
+		// location.reload(true);重新刷新页面，不从缓存加载页面
+		*/
+	</script>
+</body>
+</html>

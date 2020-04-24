@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>setInterval()</title>
+    <style type="text/css">
+    div {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #333;
+        word-wrap: break-word;
+    }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="开始" id="start">
+    <br><br>
+    <div id="content"></div>
+    <script type="text/javascript">
+    //补充代码
+    var content = document.getElementById("content"),
+    	btn = document.getElementById("start");
+    btn.onclick = printText;
+    function printText (argument) {
+    	// body... 
+    	var str = "";
+    	var timer = setInterval(function () {
+    		str+="hello&nbsp;";
+    		content.innerHTML = str;
+    	},1000)
+    }
+    </script>
+</body>
+
+</html>
