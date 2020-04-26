@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<ul id="list"></ul>
+	</div>
+	<script>
+		var comment = document.createComment("A comment");
+		var fragment = document.createDocumentFragment(),
+			ul = document.getElementById("list"),
+			li = null;
+		for (var i = 0; i < 3; i++) {
+			li = document.createElement("li");
+			li.appendChild(document.createTextNode("Item" + (i+1)));
+			fragment.appendChild(li);
+		}
+		ul.appendChild(fragment);
+		console.log(ul);
+		document.body.insertBefore(comment,ul);
+	</script>
+</body>
+</html>
