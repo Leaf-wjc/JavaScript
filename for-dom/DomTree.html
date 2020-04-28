@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>节点遍历</title>
+</head>
+<body>
+  <div>
+    <p>
+      <span>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </span>
+      <span>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </span>
+      <span>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </span>
+    </p>
+  </div>
+    <script>
+		var s = "";
+		function travel (space,node) {
+			// body... 
+			if (node.tagName) {
+				s = s + space + node.tagName +"<br/>";
+			}
+			var len = node.childNodes.length;
+			for (var i = 0; i < len; i++) {
+				travel(space+"*",node.childNodes[i]);
+			}
+		}
+		travel("",document);
+		document.write(s);
+    </script>
+</body>
+</html>
