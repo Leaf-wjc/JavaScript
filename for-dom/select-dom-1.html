@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节点查找</title>
+</head>
+<body>
+<!-- 	getElementsBytagName
+	getElementsByName
+	getElementsByClassName
+	querySelector
+	querySelectorAll -->
+	<!-- id出现两次，只会打印第一个id元素 -->
+	<div id="wrap">我是div中的内容
+		<p id="wrap">我是p标签中的内容
+			<span id="span">
+				我是span中的内容
+			</span>
+		</p>
+	</div>
+	<script>
+		var div = document.getElementById("wrap");
+		var p = document.getElementById("wrap");
+		console.log(div.innerHTML);
+		console.log(p.innerHTML);
+		console.log(div);
+		console.log(p);
+		var span = p.getElementById("span");
+		console.log(span.innerHTML);
+	</script>
+</body>
+</html>

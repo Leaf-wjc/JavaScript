@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="getElementsByClassName.js"></script>
+</head>
+<body>
+	<ul id="myUl">
+		<li class="light">1</li>
+		<li class="light dark">2</li>
+		<li class="light">3</li>
+	</ul>
+	<ul id="myUl2">
+		<li class="light">1</li>
+		<li class="light dark">second</li>
+		<li class="light">3</li>
+	</ul>
+<script>
+	var myUl2 = document.getElementById("myUl2");
+	var r = testName({
+		searchClass : "light dark",
+		scope : myUl2,
+	});
+	console.log(r[0].innerHTML);
+</script>
+</body>
+</html>
