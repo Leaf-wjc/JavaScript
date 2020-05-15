@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>insertBefore</title>
+</head>
+<body>
+	<ul id="first">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<script>
+		// insertBefore()有两个参数，第一个是要装填的新的节点，第二个是参照位置
+		var ul = document.getElementById("first"),
+			txt = document.createTextNode("4"),
+			liNew = document.createElement("li"),
+			firstLi = ul.firstElementChild;
+
+		console.log(firstLi);
+		
+		var li2 = ul.children[2];//另外一种写法也可以写成，ul.children.item(1)
+
+		ul.insertBefore(firstLi,li2);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attributes</title>
+</head>
+<body>
+	<div id="box"></div>
+	<script>
+		var data = document.createAttribute('data'),
+		    div = document.getElementById('box');
+		data.value = "wrap";
+		div.attributes.setNamedItem(data);
+		console.log(div.setAttribute('test', "1"));
+
+
+		console.log(div.attributes.getNamedItem('data').nodeValue);
+		console.log(div.attributes.removeNamedItem('data'));//返回整个属性
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>操作节点的方法</title>
+</head>
+<body>
+<!-- 	appendChild()
+	insertBefore()
+	replaceChild()
+	cloneNode()
+	normalize()
+	splitText() -->
+	
+	<ul id="first">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<script>
+		var ul = document.getElementById("first");
+		var txt = document.createTextNode("4");
+		var li = document.createElement("li");
+		var firstLi = ul.firstElementChild;
+		var returnNode = ul.appendChild(firstLi);
+		console.log(returnNode);
+		li.appendChild(txt);
+		ul.appendChild(li);
+	</script>
+</body>
+</html>

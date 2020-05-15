@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>replaceChild</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul id="list">
+            <li>第一个li</li>
+            <li>第二个li</li>
+            <li>第三个li</li>
+        </ul>
+        <ul id="list2">
+
+        </ul>
+    </div>
+    <button id="btn"></button>
+    <script>
+    var ul = document.getElementById("list"),
+        ulNew = document.getElementById("list2"),
+        btn = document.getElementById("btn");
+    btn.onclick = function addList (argument) {
+        // body... 
+        li = ul.firstElementChild;
+        ulNew.appendChild(li);
+    }
+    </script>
+</body>
+
+</html>

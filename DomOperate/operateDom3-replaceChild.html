@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>replaceChild</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul id="list">
+            <li>第一个li</li>
+            <li>第二个li</li>
+            <li>第三个li</li>
+        </ul>
+    </div>
+    <script>
+    	var container = document.getElementById("wrap"),
+    		ul = document.getElementById("list"),
+    		strArr = ["HTML","CSS","HTML5","CSS3"],
+    		ulNew = document.createElement("ul"),
+    		li = null;
+    	for (var i = 0; i < strArr.length; i++) {
+    		li = document.createElement("li");
+    		li.appendChild(document.createTextNode(strArr[i]));
+    		ulNew.appendChild(li);
+    	}
+    	container.replaceChild(ulNew, ul);
+    </script>
+</body>
+
+</html>

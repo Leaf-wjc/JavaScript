@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div:not(:nth-of-type(2)) {
+        width: 500px;
+        height: 100%;
+        background-color: #a0e4ff;
+        margin: 0 auto;
+    }
+    /*ul默认有外边距*/
+
+    ul {
+        width: 300px;
+        height: 100%;
+        background-color: #ecc7ea;
+        list-style: none;
+        /*清除默认边距*/
+        margin: 0;
+        padding: 0;
+        margin: 20px auto;
+        margin-bottom: 30px;
+    }
+
+    li {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        margin: 30px auto;
+        background-color: #cdffc0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <button id="btnAdd">添加元素</button>
+        <button id="btnRemove">删除元素</button>
+        <ul id="list">我是ul
+            <li>我是li1</li>
+            <li>我是li2</li>
+            <li>我是li3</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    var ul = document.getElementById("list"),
+        lis = ul.getElementsByTagName("li"),
+        liNew = null,
+        lisLen = lis.length;
+    console.log(lisLen);
+    for (var i = 0; i < lisLen; i++) {
+        lis[i].onmouseover = overColor;
+        lis[i].onmouseout = outColor;
+    }
+    var btnAdd = document.getElementById("btnAdd"),
+        btnRemove = document.getElementById("btnRemove");
+        count = lisLen;
+    btnAdd.onclick = function () {
+        /* body... */
+        count++;
+        liNew = document.createElement("li");
+        liNew.appendChild(document.createTextNode("我是li"+count));
+        ul.appendChild(liNew);
+
+    }
+    btnRemove.onclick = function () {
+        /* body... */
+        if (lis.length == 0) {
+            alert("您不能够再进行删除了哦，已经没有选项可供删除了");
+        } else {
+             ul.removeChild(ul.lastElementChild);
+             count--;
+        }
+    }
+    function overColor () {
+        // body... 
+        this.style.backgroundColor = 'purple';
+    }
+    function outColor () {
+        // body... 
+        this.style.backgroundColor = 'rgb(234, 136, 137)';
+    }
+    </script>
+</body>
+
+</html>
